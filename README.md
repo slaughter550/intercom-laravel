@@ -13,7 +13,7 @@ Using Composer:
         }
     ],
     "require": {
-      "slaughter550/intercom-laravel": "~1.1"
+        "slaughter550/intercom-laravel": "~1.1"
     }
 }
 ```
@@ -41,6 +41,6 @@ config/services.php
 ```php
 // Create/update a user
 Intercom::users()->create([
-  'email' => 'test@intercom.io'
+    'email' => 'test@intercom.io'
 ]);
 ```
