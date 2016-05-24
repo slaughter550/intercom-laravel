@@ -19,6 +19,16 @@ Using Composer:
 ```
 
 ## Configuration
+config/app.php
+```php
+'providers' => [
+    'Shadow\IntercomLaravel\ServiceProvider',
+],
+'aliases' => [
+    'Intercom' => 'Shadow\IntercomLaravel\Facade',
+],
+```
+
 config/services.php
 ```php
 'intercom' => [
