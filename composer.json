@@ -9,7 +9,7 @@
     }],
     "require": {
         "intercom/intercom-php": "2.0.0",
-        "laravel/framework": ">=5.0",
+        "laravel/framework": ">=5.0"
     },
     "autoload": {
         "psr-4": {
