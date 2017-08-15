@@ -4,18 +4,8 @@ Laravel 5.x Wrapper for Intercom API
 ## Installation
 
 Using Composer:
-```json
-{
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/slaughter550/intercom-laravel"
-        }
-    ],
-    "require": {
-        "slaughter550/intercom-laravel": "~1.1"
-    }
-}
+```
+composer require slaughter550/intercom-laravel
 ```
 
 ## Configuration
