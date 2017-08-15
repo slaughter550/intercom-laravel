@@ -8,7 +8,7 @@
         "email": "alex@alexslaughter.com"
     }],
     "require": {
-        "intercom/intercom-php": "3.0.0",
+        "intercom/intercom-php": "3.0.2",
         "laravel/framework": ">=5.0"
     },
     "autoload": {
