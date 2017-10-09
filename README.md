@@ -9,6 +9,9 @@ composer require slaughter550/intercom-laravel
 ```
 
 ## Configuration
+
+This package uses the Auth-Discovery feature in Laravel 5.5. For <5.5 use the following config:
+
 config/app.php
 ```php
 'providers' => [
@@ -19,11 +22,12 @@ config/app.php
 ],
 ```
 
+
+
 config/services.php
 ```php
 'intercom' => [
-    'app_id' => 'appIdGoesHere',
-    'api_key' => 'apiKeyGoesHere',
+    'token' => 'tokenGoesHere'
 ],
 ```
 
