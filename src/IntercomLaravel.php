@@ -9,7 +9,7 @@ class IntercomLaravel
     private $intercom;
     public function __construct($token)
     {
-        $this->intercom = new IntercomClient($token);
+        $this->intercom = new IntercomClient($token, null);
     }
 
     public function __call($method, array $args)
