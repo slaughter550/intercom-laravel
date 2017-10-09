@@ -10,10 +10,9 @@ class ServiceProvider extends IlluminateServiceProvider
     public function register()
     {
         $this->app->bind('intercom', function () {
-            $id = Config::get('services.intercom.app_id');
-            $key = Config::get('services.intercom.api_key');
+            $token = Config::get('services.intercom.token');
 
-            return new IntercomLaravel($id, $key);
+            return new IntercomLaravel($token);
         });
     }
 }
