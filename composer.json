@@ -8,12 +8,22 @@
         "email": "alex@alexslaughter.com"
     }],
     "require": {
-        "intercom/intercom-php": "3.1.8",
+        "intercom/intercom-php": "^3.1.8",
         "laravel/framework": ">=5.0"
     },
     "autoload": {
         "psr-4": {
           "Shadow\\IntercomLaravel\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Shadow\\IntercomLaravel\\ServiceProvider"
+            ],
+            "aliases": {
+                "Intercom": "Shadow\\IntercomLaravel\\Facade"
+            }
         }
     }
 }
