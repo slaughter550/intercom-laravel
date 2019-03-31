@@ -8,22 +8,25 @@
         "email": "alex@alexslaughter.com"
     }],
     "require": {
-        "intercom/intercom-php": "3.2.0",
-        "laravel/framework": ">=5.0"
+        "php": "^7.0",
+        "intercom/intercom-php": "4.0.2",
+        "laravel/framework": ">=5.1"
     },
     "autoload": {
         "psr-4": {
           "Shadow\\IntercomLaravel\\": "src/"
         }
     },
+    "config": {
+        "preferred-install": "dist"
+    },
     "extra": {
         "laravel": {
             "providers": [
                 "Shadow\\IntercomLaravel\\ServiceProvider"
-            ],
-            "aliases": {
-                "Intercom": "Shadow\\IntercomLaravel\\Facade"
-            }
+            ]
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

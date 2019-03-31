@@ -7,6 +7,7 @@ use Intercom\IntercomClient;
 class IntercomLaravel
 {
     private $intercom;
+
     public function __construct($id, $key)
     {
         $this->intercom = new IntercomClient($id, $key);
